@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Responsive Navbar - Lifelinkr Style</title>
+    <title>Lifelinkr</title>
 
     <link
       rel="stylesheet"
@@ -841,33 +841,26 @@
       </div>
     </div>
 
-    <!-- Mobile View: Bottom Bar + Hidden Calendar -->
-    <div class="bottom-nav d-md-none">
-      <button class="btn btn-primary w-100" onclick="toggleMobileCalendar()">
-        Schedule a Demo
-      </button>
+    <!-- Mobile View: Bottom Bar -->
+    <div class="mobile-ivf-bar d-md-none">
+  <div class="top-row">
+    <span class="title">FOR IVF SOFTWARE</span>
+    <button class="btn-schedule-demo">
+      Schedule Demo <i class="fas fa-arrow-right ms-2"></i>
+    </button>
+  </div>
+  <div class="feature-row">
+    <div class="feature-item">
+      <i class="fas fa-shield-alt"></i>
+      <span>Complete Data Security</span>
     </div>
+    <div class="feature-item">
+      <i class="fas fa-laptop-medical"></i>
+      <span>Easy-to-Use Software</span>
+    </div>
+  </div>
+</div>
 
-    <div id="mobileCalendar" class="calendar-mobile d-md-none">
-      <div class="demo-calendar">
-        <h5 class="text-primary fw-bold mb-3">Schedule Software Demo</h5>
-        <div>
-          <div class="rt-container">
-            <div class="col-rt-12">
-              <div class="Scriptcontent">
-                <!-- DEMO HTML -->
-                <div class="calendar-wrapper">
-                  <button id="btnPrev" type="button">Prev</button>
-                  <button id="btnNext" type="button">Next</button>
-                  <div id="divCal"></div>
-                </div>
-                <!-- END DEMO HTML -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-light pt-5">
@@ -965,10 +958,7 @@
     </footer>
 
     <script>
-      function toggleMobileCalendar() {
-  const cal = document.getElementById("mobileCalendar");
-  cal.classList.toggle("show");
-}
+      
 
 
       const loadMoreBtn = document.getElementById("loadMoreBtn");
